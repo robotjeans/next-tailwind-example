@@ -1,3 +1,22 @@
 @tailwind base;
+@import "./reset.css";
+
+.nav-sticky header {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 1400px) {
+  .nav-sticky header .navbar {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}
+@media (min-width: 1200px) {
+  .nav-sticky header .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
 @tailwind components;
 @tailwind utilities;
