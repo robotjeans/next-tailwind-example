@@ -16,7 +16,11 @@ const SocialProfile: React.FC<Props> = ({ items, ...props }) => {
           className="relative list-none mr-5 last:mr-0 hover:opacity-[1]"
           key={index}
         >
-          <a href={item.url} aria-label="social profile">
+          <a
+            href={item.url}
+            className="text-black block text-xl px-2"
+            aria-label="social profile"
+          >
             {item.icon || "icon"}
           </a>
         </li>

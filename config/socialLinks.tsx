@@ -8,7 +8,7 @@ import {
 
 // Your social url's HERE
 
-const SocialLinks = [
+const socialLinks = [
   {
     icon: <IoLogoFacebook />,
     url: "https://www.facebook.com/robotjeans/",
@@ -31,4 +31,4 @@ const SocialLinks = [
   },
 ];
 
-export default SocialLinks;
+export default socialLinks;
