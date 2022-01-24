@@ -1,6 +1,6 @@
 import { NextPage } from "next";
 
-const HomePage: React.FC<NextPage> = () => {
+const ContactPage: React.FC<NextPage> = () => {
   return (
     <div className="w-mx-auto container px-4">
       <div className="w-full">
@@ -8,13 +8,10 @@ const HomePage: React.FC<NextPage> = () => {
           <div className="pb-12 md:pt-28 px-4 pt-6">
             <div className="text-center">
               <h1 className="text-5xl font-extrabold tracking-tighter leading-none mb-8 dark:text-white">
-                Next <span className="text-indigo-500">Tailwind</span> Template
+                Contact <span className="text-indigo-500">Page</span>
               </h1>
               <h3 className="text-lg font-normal text-gray-500 dark:text-gray-300 leading-relaxed max-w-screen-md mx-auto tracking-normal">
-                Bacon ipsum dolor amet bacon ground round spare ribs, picanha
-                drumstick shankle flank fatback sirloin chicken tongue boudin.
-                Picanha beef pork, beef ribs spare ribs chicken fatback boudin
-                pork chop kielbasa hamburger filet mignon.
+                Welcome to the contact page.
               </h3>
             </div>
           </div>
@@ -24,4 +21,4 @@ const HomePage: React.FC<NextPage> = () => {
   );
 };
 
-export default HomePage;
+export default ContactPage;
