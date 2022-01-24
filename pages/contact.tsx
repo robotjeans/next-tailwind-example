@@ -1,8 +1,12 @@
 import { NextPage } from "next";
+import Head from "next/head";
 
 const ContactPage: React.FC<NextPage> = () => {
   return (
     <div className="w-mx-auto container px-4">
+      <Head>
+        <title>Next Tailwindcss | Contact</title>
+      </Head>
       <div className="w-full">
         <div className="container mx-auto">
           <div className="pb-12 md:pt-28 px-4 pt-6">
