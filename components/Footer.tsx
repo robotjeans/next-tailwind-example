@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
             href="https://github.com/robotjeans"
             target="_blank"
             rel="noreferrer"
-            className="ml-1 text-indigo-500 hover:text-green-700"
+            className="ml-1 text-teal-500 hover:text-teal-900"
           >
             @robotjeans
           </a>

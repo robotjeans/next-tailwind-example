@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
+import Image from "next/image";
 
 const Header: React.FC = () => {
   const { theme, setTheme } = useTheme();
@@ -12,22 +13,27 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-white dark:bg-black py-4 overflow-x-auto">
+    <header className="fixed top-0 left-0 z-50 w-full bg-white dark:bg-black py-4">
       <div className="max-w-7xl mx-auto px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/">
-            <a className="dark:text-gray-300 text-gray-500  hover:text-black  dark:hover:text-white px-3 py-2 rounded-md text-md tracking-tight">
-              Home
+            <a>
+              <Image
+                src="/images/logo-32x32.png"
+                alt="Home Logo"
+                width={32}
+                height={32}
+              />
             </a>
           </Link>
           <div className="flex items-baseline space-x-4">
             <Link href="/about">
-              <a className="dark:text-gray-300 text-gray-500  hover:text-black  dark:hover:text-white px-3 py-2 rounded-md text-md tracking-tight">
+              <a className="dark:text-gray-300 text-gray-500  hover:text-teal-500  dark:hover:text-white px-3 py-2 rounded-md text-md tracking-tight">
                 About
               </a>
             </Link>
             <Link href="/contact">
-              <a className="dark:text-gray-300 text-gray-500  hover:text-black  dark:hover:text-white px-3 py-2 rounded-md text-md tracking-tight">
+              <a className="dark:text-gray-300 text-gray-500  hover:text-teal-500  dark:hover:text-white px-3 py-2 rounded-md text-md tracking-tight">
                 Contact
               </a>
             </Link>
@@ -67,13 +73,6 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-      <style jsx>{`
-        #themeToggle:checked + label .switch-ball {
-          background-color: white;
-          transform: translateX(24px);
-          transition: transform 0.3s linear;
-        }
-      `}</style>
     </header>
   );
 };

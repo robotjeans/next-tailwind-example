@@ -6,24 +6,15 @@ import "@/styles/globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Head from "next/head";
+import Layout from "@/components/Layout";
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <link rel="shortcut icon" href="/favicon.ico" />
-      </Head>
-      <ThemeProvider attribute="class">
-        <div className="h-screen">
-          <Header />
-          <div className="h-screen bg-white dark:bg-black overflow-y-scroll">
-            <Component {...pageProps} />
-          </div>
-          <Footer />
-        </div>
-      </ThemeProvider>
-    </>
+    <ThemeProvider attribute="class">
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
+    </ThemeProvider>
   );
 };
 
