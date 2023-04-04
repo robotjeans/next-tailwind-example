@@ -15,7 +15,7 @@ const HomePage: React.FC<NextPage> = () => {
                 Next <span className="text-teal-500">Tailwind</span> Template
               </h1>
               <h3 className="text-lg font-normal text-gray-500 dark:text-gray-300 leading-relaxed max-w-screen-md mx-auto tracking-normal">
-                Bacon ipsum dolor amet bacon ground round spare ribs, picanha drumstick shankle
+                Bacon pipsum dolor amet bacon ground round spare ribs, picanha drumstick shankle
                 flank fatback sirloin chicken tongue boudin. Picanha beef pork, beef ribs spare ribs
                 chicken fatback boudin pork chop kielbasa hamburger filet mignon.
               </h3>
